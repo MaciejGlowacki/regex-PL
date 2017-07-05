@@ -2,9 +2,9 @@ window.addEventListener("load", function(event) {
 
   const regMail = /^[a-z\d]+[\w\d.-]*@(?:[a-z\d]+[a-z\d-]+\.){1,5}[a-z]{2,13}$/i;
   const regName = /^[a-ząśżźćęółń]{2,20}$/i;
-  const regSurname = /^[a-ząśżźćęółń]+(?:\s*-\s*)?\s?(\s\b[a-z]{3}\b\s)?[a-ząśżźćęółń]+$/i;
+  const regSurname = /^[a-ząśżźćęółń]+(?: *- *)? ?( \b[a-z]{3}\b )?[a-ząśżźćęółń]+$/i;
   const regPostCode = /^[0-9]{2}-[0-9]{3}$/;
-  const regTel = /^(?:\(?\+?48)?(?:[-\.\(\)\s]*(\d)){9}\)?$/;
+  const regTel = /^(?:\(?\+?48)?(?:[-\.\(\) ]*(\d)){9}\)?$/;
 
   const regPESEL = /^[0-9]{11}$/;
   // The above PESEL record provides for simplified validation, without checking the date of birth and the checksum
@@ -15,7 +15,7 @@ window.addEventListener("load", function(event) {
   const validMail = [
              'andrzej@fipmopol.pl',
              'andrzej@firmopol.versicherung',
-             'mikołaj.sochacki@firma.com',
+             'mikolaj.sochacki@firma.com',
              'Jerzy@urzad.gov.pl',
              'ToMeK@mennic.pl',
              'tomek123@domena111.pl',
