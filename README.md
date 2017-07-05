@@ -2,7 +2,7 @@
 Sample regex for polish language forms
 
 
-##MIT License
+## MIT License
 
 Copyright 2017 Maciej Głowacki
 
